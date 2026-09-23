@@ -31,6 +31,7 @@ Do not ask the user for facts that can be determined from the repository, GitHub
 Number grill questions sequentially as `Q1`, `Q2`, and so on.
 Restart numbering at `Q1` for each chat.
 Give a recommended answer with every question.
+Put the recommended answer last, after all answer choices for that question.
 
 Present answer choices for every grill question.
 If the decision can be fully answered as yes or no, label the choices `Y` and `N`.
@@ -95,6 +96,13 @@ If they could change the meaning of a settled decision, continue grilling.
 
 Keep this lightweight.
 Do not perform unnecessary repository-wide work merely because the target branch advanced.
+
+## PR review
+
+If PR review, including reviewer feedback or self-review, reveals a decision that requires user judgment, return directly to the Grill and continue the normal question sequence.
+Do not resolve that decision silently as part of review handling.
+
+After the resulting decision is settled, synchronize the PR again before completion.
 
 ## Completion
 

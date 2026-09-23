@@ -11,14 +11,16 @@ The user specifies a GitHub repository and target branch.
 The skill then:
 
 1. grills unresolved decisions that materially affect the purpose, requirements, or design;
-2. creates a Draft PR early;
-3. changes documentation only, never implementation files;
-4. updates the PR after about five newly settled decisions;
-5. treats each checkpoint as a full synchronization between the conversation and the PR;
-6. distinguishes decided, unresolved, and deferred issues;
-7. keeps only the currently effective decisions when earlier statements are corrected or replaced;
-8. finishes when no in-scope unresolved decision remains;
-9. removes Draft status when the design PR is ready for review.
+2. puts each recommended answer after all choices for its grill question;
+3. creates a Draft PR early;
+4. changes documentation only, never implementation files;
+5. updates the PR after about five newly settled decisions;
+6. treats each checkpoint as a full synchronization between the conversation and the PR;
+7. distinguishes decided, unresolved, and deferred issues;
+8. keeps only the currently effective decisions when earlier statements are corrected or replaced;
+9. finishes when no in-scope unresolved decision remains;
+10. removes Draft status when the design PR is ready for review;
+11. returns directly to grilling if PR review reveals a decision that requires user judgment.
 
 Implementation belongs to a separate phase.
 
@@ -43,6 +45,8 @@ Incidental names such as branch names, PR titles, and document names are chosen 
 The final artifact is a review-ready design PR.
 
 Issues explicitly deferred to another chat or phase do not block completion.
+
+If reviewer feedback or self-review introduces a decision that requires user judgment, the skill resumes the normal grill flow and synchronizes the resulting decision back into the PR.
 
 ## Origin
 
