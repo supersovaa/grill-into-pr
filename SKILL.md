@@ -56,8 +56,12 @@ The PR is a persistent design artifact, not an implementation PR.
 Only documentation files may be changed.
 Do not modify source code, configuration, build definitions, schemas, or other implementation files.
 
-Reflect settled decisions in the most suitable existing documentation.
+Reflect currently effective decisions in the documentation that owns their subject matter, following the repository's canonical-document conventions.
 If no suitable document exists, create an appropriate design document.
+
+Write canonical requirements and design as statements of the current intended purpose, requirements, behavior, constraints, and material rationale, rather than a record of the conversation or the work that produced them.
+Express each decision in terms of its subject instead of using grill question numbers, answer-choice labels, or conversational approvals as persistent identifiers. Preserve identifiers that belong to the subject or an authoritative source, such as official Q&A numbers.
+Keep work assignments, implementation timing, execution evidence, and PR workflow metadata in their owning records. When a decision changes, replace its previous canonical statement with the current one; Git history retains earlier document versions.
 
 Keep the PR body useful as a current design-status summary.
 Distinguish at least:
