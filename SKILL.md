@@ -22,7 +22,7 @@ Do not grill merely to choose a PR title, branch name, document name, or similar
 
 ## Grill
 
-Resolve every user decision needed to make the intended design unambiguous.
+Resolve every user decision needed to make the intended design unambiguous; after each user response, reconcile currently effective decisions and continue with the next eligible unresolved question until the grill is complete.
 
 Map decisions by dependency.
 Ask only questions whose prerequisites are already settled.
