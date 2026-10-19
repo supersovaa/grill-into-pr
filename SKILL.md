@@ -56,7 +56,8 @@ The PR is a persistent design artifact, not an implementation PR.
 Only documentation files may be changed.
 Do not modify source code, configuration, build definitions, schemas, or other implementation files.
 
-Reflect settled decisions in the most suitable existing documentation.
+Reflect only currently effective decisions in the documentation that owns them, following the repository's conventions. State the intended purpose, requirements, behavior, constraints, and material rationale rather than the conversation or workflow that produced them.
+Use identifiers intrinsic to the subject or an authoritative source (such as official Q&A numbers); grill question numbers, answer-choice labels, and approvals are not canonical identifiers.
 If no suitable document exists, create an appropriate design document.
 
 Keep the PR body useful as a current design-status summary.
