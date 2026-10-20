@@ -22,7 +22,7 @@ Do not grill merely to choose a PR title, branch name, document name, or similar
 
 ## Grill
 
-Resolve every user decision needed to make the intended design unambiguous. After each user response, PR checkpoint, or review, reconcile current decisions and identify any further user decisions needed, including those not yet asked. While any remain, end the same response with the next eligible unresolved grill question.
+Resolve every user decision needed to make the intended design unambiguous. After each user response, PR checkpoint, or review, reconcile currently effective decisions and identify further decisions needed, including those not yet asked. Complete the response by asking the next eligible unresolved grill question while any remain, or by finishing the design PR and presenting its link once none remain. Progress reports support one of these outcomes rather than replace it.
 
 Map decisions by dependency.
 Ask only questions whose prerequisites are already settled.
