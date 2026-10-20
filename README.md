@@ -1,6 +1,6 @@
 # grill-into-pr
 
-`grill-into-pr` is a ChatGPT-oriented skill for designing a GitHub repository change before implementation.
+`grill-into-pr` is a ChatGPT-oriented skill for designing a GitHub repository change before implementation, including redesign of already-implemented behavior.
 
 It uses focused grilling to settle the purpose, requirements, and design, then continuously reflects those decisions in a documentation-only Draft PR.
 
@@ -33,6 +33,8 @@ At each checkpoint, the skill compares all currently effective decisions with th
 This keeps long design conversations from accumulating unreflected decisions.
 
 ## Scope
+
+For already-implemented behavior, the skill compares authoritative requirements and design with the current implementation, then settles the intended design without treating existing code or tests as requirements. Implementation, testing, replanning, and salvage decisions belong to their respective workflows.
 
 The PR may modify documentation files only.
 
