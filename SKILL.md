@@ -1,11 +1,11 @@
 ---
 name: grill-into-pr
-description: Grill the user to settle the purpose, requirements, and design for changes to a GitHub repository, continuously reflect the settled design in a documentation-only Draft PR, and finish with a review-ready PR.
+description: Grill the user to settle the purpose, requirements, and design for a GitHub repository change, including redesign of already-implemented behavior, and reflect decisions in a documentation-only Draft PR until review-ready.
 ---
 
 # Grill into PR
 
-Use this skill when a GitHub repository change should be designed before implementation.
+Use this skill when a GitHub repository change should be designed before implementation, including redesign of already-implemented behavior.
 
 The purpose is to align on intent, requirements, and design.
 Do not implement program code.
@@ -19,6 +19,19 @@ Use the latest relevant state of the target branch as needed.
 
 If naming is not already constrained by the user or repository, choose suitable names autonomously.
 Do not grill merely to choose a PR title, branch name, document name, or similar incidental name.
+
+## Redesigning implemented behavior
+
+When the requested change concerns behavior already implemented, read the relevant authoritative requirements and design, and inspect current code and tests as evidence of existing behavior, dependencies, and constraints.
+Distinguish established requirements from choices made only by the implementation.
+
+Settle the intended requirements and design on their merits, without treating the current implementation or tests as authority for preserving behavior.
+Identify affected decisions to retain, revise, or replace, including actual compatibility and migration obligations.
+Keep unaffected decisions in force.
+
+Reflect the resulting target state in its owning requirements and design documents within the documentation-only PR.
+Implementation changes, test updates, and replanning belong to their respective workflows.
+Use `implementation-salvage-threshold` when deciding whether outdated in-progress implementation should be salvaged or reimplemented.
 
 ## Grill
 
