@@ -29,7 +29,7 @@ After the last tool result or repository operation and before ending each assist
 - While a user decision remains, ask the next eligible numbered grill question, with its answer choices and recommended answer, as the final content of the response.
 - Once no user decision remains across the full in-scope design, complete the design PR, make it ready for review, and end with its link.
 
-Place PR update results, checkpoint reports, reviews, and progress summaries before that final outcome. Reevaluate the remaining decisions after reflecting the latest answer in the PR; synchronizing a decision is an intermediate step in the active grill.
+Place PR update results, checkpoint reports, reviews, and progress summaries before that final outcome. Reevaluate the remaining decisions after every PR synchronization; the synchronization itself is an intermediate step in the active grill.
 
 Map decisions by dependency.
 Ask only questions whose prerequisites are already settled.
