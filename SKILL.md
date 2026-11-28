@@ -1,11 +1,11 @@
 ---
 name: grill-into-pr
-description: Settle a GitHub change’s purpose, requirements, and design with the user. Keep a documentation-only draft PR current until it is ready for review.
+description: Use when designing a GitHub repository change with the user and recording the design in a documentation-only draft PR.
 ---
 
 # Grill into PR
 
-Work with the user to settle intent, requirements, and design before implementation. Record those decisions in the documentation-only PR. Program code is outside this workflow.
+During design, clarify unresolved user decisions and record settled intent, requirements, and design in the draft PR as they emerge. Program code is outside this workflow.
 
 ## Target
 
