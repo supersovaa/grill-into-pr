@@ -1,14 +1,11 @@
 ---
 name: grill-into-pr
-description: Grill the user to settle the purpose, requirements, and design for changes to a GitHub repository, continuously reflect the settled design in a documentation-only Draft PR, and finish with a review-ready PR.
+description: Use when designing a GitHub repository change with the user and recording the design in a documentation-only draft PR.
 ---
 
 # Grill into PR
 
-Use this skill when a GitHub repository change should be designed before implementation.
-
-The purpose is to align on intent, requirements, and design.
-Do not implement program code.
+During design, clarify unresolved user decisions and record settled intent, requirements, and design in the draft PR as they emerge. Program code is outside this workflow.
 
 ## Target
 
